@@ -3,8 +3,8 @@
     "model": "catalog.product",
     "pk": 1,
     "fields": {
-      "name": "Кофеварка",
-      "description": "Bosch\r\nс автоотключением\r\nцвет - белый",
+      "name": "iphone",
+      "description": "apple\r\13 version\r\nцвет - белый",
       "image": "",
       "category": 1,
       "price": 1000,
