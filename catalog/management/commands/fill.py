@@ -8,13 +8,13 @@ class Command(BaseCommand):
 
     @staticmethod
     def json_read_categories():
-        with open('categories.json', encoding="UTF-8") as f:
+        with open('fixtures/categories.json', encoding="UTF-8") as f:
             data = json.load(f)
             return data
 
     @staticmethod
     def json_read_products():
-        with open('products.json', encoding="UTF-8") as f:
+        with open('fixtures/products.json', encoding="UTF-8") as f:
             data = json.load(f)
             return data
 
