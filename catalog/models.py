@@ -46,3 +46,17 @@ class Contacts(models.Model):
     class Meta:
         verbose_name = 'Контакт'
         verbose_name_plural = 'Контакты'
+
+
+class Version(models.Model):
+    product = models.ForeignKey(Product, related_name='versions', on_delete=models.CASCADE, verbose_name='продукт')
+    number = models.IntegerField(verbose_name='номер версии')
+    name = models.CharField(max_length=50, verbose_name='название версии')
+    is_active = models.BooleanField(default=False, verbose_name='признак активности версии')
+
+    def __str__(self):
+        return f'{self.name} ({self.number})'
+
+    class Meta:
+        verbose_name = 'версия'
+        verbose_name_plural = 'версии'
